@@ -1,0 +1,18 @@
+<template>
+<div class="flex">
+  <div class="h-screen w-400px py-10 bg-base text-white">
+    <span class="block ml-4 text-2xl font-bold">Growfit Headless CMS</span>
+    <div class="flex items-center mt-10 ml-4">
+      <span class="block text-xs whitespace-nowrap">コンテンツ</span>
+      <div class="h-0 w-full ml-2 border-t border-dashed"></div>
+    </div>
+    <div class="flex items-center w-full mt-5 p-4 bg-primary rounded-lg">
+      <span class="material-icons block">article</span>
+      <span class="block ml-4">ニュース</span>
+    </div>
+  </div>
+  <main>
+    <Nuxt />
+  </main>
+</div>
+</template>
