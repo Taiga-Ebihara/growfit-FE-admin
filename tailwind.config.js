@@ -8,9 +8,9 @@ module.exports = {
         primary: '#4BACB8',
       },
       spacing: {
-        '400px': '400px'
-      }
-    }
+        '400px': '400px',
+      },
+    },
   },
   variants: {
     extend: {},

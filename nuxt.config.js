@@ -13,7 +13,10 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' },
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/icon?family=Material+Icons',
+      },
     ],
   },
 
@@ -35,7 +38,7 @@ export default {
   ],
 
   tailwindcss: {
-    configPath: '~~/tailwind.config.js'
+    configPath: '~~/tailwind.config.js',
   },
 
   // Modules: https://go.nuxtjs.dev/config-modules
