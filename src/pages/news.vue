@@ -25,7 +25,7 @@
         </div>
       </div>
       <ul class="text-xs">
-        <li class="py-2 border-b">
+        <li class="py-2 border-b cursor-pointer">
           <div class="grid gap-2 grid-cols-12 items-center ml-4">
             <div class="flex col-span-1">
               <span class="py-2 px-4 bg-accent-1 rounded-lg text-white truncate">公開中</span>
@@ -37,7 +37,7 @@
             <span class="col-span-2 truncate">2022-02-27 21:30:00</span>
           </div>
         </li>
-        <li class="py-2 border-b">
+        <li class="py-2 border-b cursor-pointer">
           <div class="grid gap-2 grid-cols-12 items-center ml-4">
             <div class="flex col-span-1">
               <span class="py-2 px-4 bg-accent-2 rounded-lg text-white truncate">下書き</span>
@@ -53,21 +53,21 @@
     </div>
     <div class="flex justify-center items-center mt-10">
       <button>
-        <span class="material-icons flex text-primary">keyboard_double_arrow_left</span>
+        <span class="material-icons flex text-primary duration-300 hover:opacity-80">keyboard_double_arrow_left</span>
       </button>
       <button>
-        <span class="material-icons flex text-primary">keyboard_arrow_left</span>
+        <span class="material-icons flex text-primary duration-300 hover:opacity-80">keyboard_arrow_left</span>
       </button>
       <div class="flex justify-center items-center h-30px w-30px ml-4">...</div>
-      <button class="flex justify-center items-center h-30px w-30px ml-4 border rounded-lg text-sm">3</button>
-      <button class="flex justify-center items-center h-30px w-30px ml-4 bg-primary rounded-lg text-sm text-white">4</button>
-      <button class="flex justify-center items-center h-30px w-30px ml-4 border rounded-lg text-sm">5</button>
+      <button class="flex justify-center items-center h-30px w-30px ml-4 border rounded-lg text-sm duration-300 hover:bg-gray-100">3</button>
+      <button class="flex justify-center items-center h-30px w-30px ml-4 bg-primary rounded-lg text-sm text-white duration-300 hover:opacity-80">4</button>
+      <button class="flex justify-center items-center h-30px w-30px ml-4 border rounded-lg text-sm duration-300 hover:bg-gray-100">5</button>
       <div class="flex justify-center items-center h-30px w-30px ml-4">...</div>
       <button>
-        <span class="material-icons flex ml-4 text-primary">keyboard_arrow_right</span>
+        <span class="material-icons flex ml-4 text-primary duration-300 hover:opacity-80">keyboard_arrow_right</span>
       </button>
       <button>
-        <span class="material-icons flex text-primary">keyboard_double_arrow_right</span>
+        <span class="material-icons flex text-primary duration-300 hover:opacity-80">keyboard_double_arrow_right</span>
       </button>
     </div>
   </div>
