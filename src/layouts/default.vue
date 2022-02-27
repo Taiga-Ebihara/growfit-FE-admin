@@ -15,7 +15,7 @@
         <span class="block ml-4">ニュース</span>
       </NuxtLink>
     </div>
-    <main>
+    <main class="w-full">
       <Nuxt />
     </main>
   </div>
