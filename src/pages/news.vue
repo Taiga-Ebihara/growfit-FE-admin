@@ -77,5 +77,10 @@
 import { Vue, Component } from 'nuxt-property-decorator'
 
 @Component({})
-export default class extends Vue {}
+export default class extends Vue {
+  async created() {
+    const res = await this.$axios.get('http://127.0.0.1:8000/api/news')
+    console.log(res)
+  }
+}
 </script>
