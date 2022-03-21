@@ -8,10 +8,10 @@
     <CommonPagination
       class="mt-10"
       :pagination="pagination"
-      @click:first="toFirstPage"
-      @click:last="toLastPage"
-      @click:next="toNextPage"
-      @click:prev="toPrevPage"
+      @click:first="pagination.page = $event"
+      @click:last="pagenation.page = $event"
+      @click:next="pagination.page = $event"
+      @click:prev="pagination.page = $event"
     ></CommonPagination>
   </div>
 </template>
@@ -40,26 +40,6 @@ export default class extends Vue {
     const end: number = start + this.pagination.perPage
 
     return this.originalData.slice(start, end)
-  }
-
-  toFirstPage() {
-    this.pagination.page = 1
-  }
-
-  toNextPage() {
-    if (this.pagination.page < this.pagination.lastPage) {
-      this.pagination.page++
-    }
-  }
-
-  toLastPage() {
-    this.pagination.page = this.pagination.lastPage
-  }
-
-  toPrevPage() {
-    if (this.pagination.page > 1) {
-      this.pagination.page--
-    }
   }
 }
 </script>

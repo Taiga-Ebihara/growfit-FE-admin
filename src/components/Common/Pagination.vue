@@ -57,15 +57,23 @@ export default class extends Vue {
   pagination!: Common.Pagination
 
   @Emit('click:first')
-  onClickFirst() {}
+  onClickFirst(): number {
+    return 1
+  }
 
   @Emit('click:last')
-  onClickLast() {}
-
-  @Emit('click:prev')
-  onClickPrev() {}
+  onClickLast(): number {
+    return this.pagination.lastPage
+  }
 
   @Emit('click:next')
-  onClickNext() {}
+  onClickNext(): number {
+    return this.pagination.page < this.pagination.lastPage ? this.pagination.page + 1 : this.pagination.page
+  }
+
+  @Emit('click:prev')
+  onClickPrev(): number {
+    return this.pagination.page > 1 ? this.pagination.page - 1 : this.pagination.page
+  }
 }
 </script>
