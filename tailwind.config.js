@@ -9,6 +9,9 @@ module.exports = {
         'accent-1': '#FFC400',
         'accent-2': '#00B0FF',
       },
+      inset: {
+        '400px': '400px'
+      },
       spacing: {
         '30px': '30px',
         '104px': '104px',

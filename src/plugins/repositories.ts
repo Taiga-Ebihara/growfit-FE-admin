@@ -5,9 +5,12 @@ export type Repositories = {
   [key: string]: any
 }
 
-export default ({ $axios }: Context, inject: (key: string, value: any) => void) => {
+export default (
+  { $axios }: Context,
+  inject: (key: string, value: any) => void
+) => {
   const repositories: Repositories = {
-    news: NewsRepository($axios)
+    news: NewsRepository($axios),
   }
   inject('repositories', repositories)
 }

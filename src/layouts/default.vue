@@ -1,6 +1,6 @@
 <template>
   <div class="flex">
-    <div class="h-screen w-400px py-10 bg-base text-white">
+    <div class="fixed h-screen w-400px py-10 bg-base text-white">
       <span class="block ml-4 text-2xl font-bold">Growfit Headless CMS</span>
       <div class="flex items-center mt-10 ml-4">
         <span class="block text-xs whitespace-nowrap">コンテンツ</span>
@@ -15,7 +15,7 @@
         <span class="block ml-4">ニュース</span>
       </NuxtLink>
     </div>
-    <main class="w-full">
+    <main class="absolute left-400px">
       <Nuxt />
     </main>
   </div>
