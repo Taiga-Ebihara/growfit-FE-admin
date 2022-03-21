@@ -1,5 +1,5 @@
 export declare module News {
-  type GetResponse = {
+  type GetData = {
     id: number
     public: boolean
     title: string
@@ -8,4 +8,6 @@ export declare module News {
     created_at: string
     updated_at: string
   }
+
+  type GetResponse = GetData[]
 }
