@@ -7,7 +7,7 @@ export default ($axios: NuxtAxiosInstance) => ({
   get(): Promise<News.GetResponse> {
     return $axios.get(`${resource}`)
   },
-  find(id: string): Promise<News.FindResponde> {
+  find(id: string): Promise<News.FindResponse> {
     return $axios.get(`${resource}/${id}`)
   },
   post(params: News.PostRequest): Promise<News.PostResponse> {

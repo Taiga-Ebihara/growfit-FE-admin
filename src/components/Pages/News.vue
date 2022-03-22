@@ -2,9 +2,12 @@
   <div>
     <CommonHeader title="ニュース一覧"></CommonHeader>
     <div class="flex justify-end items-center">
-      <BaseButton class="mr-8" color="primary" prepend-icon="add"
-        >新規登録</BaseButton
-      >
+      <BaseButton
+        class="mr-8"
+        color="primary"
+        prepend-icon="add"
+        @click="$router.push('/news/add')"
+      >新規登録</BaseButton>
     </div>
     <UniquesNewsDataTable
       class="mt-4"

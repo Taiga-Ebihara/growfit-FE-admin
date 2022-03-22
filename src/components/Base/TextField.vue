@@ -16,6 +16,8 @@ export default class extends Vue {
   value!: string
 
   @Emit('input')
-  onInput() {}
+  onInput(event: InputEvent) {
+    return (event.target as HTMLInputElement).value
+  }
 }
 </script>

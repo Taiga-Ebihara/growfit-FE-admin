@@ -23,7 +23,7 @@ export declare module News {
 
   type GetResponse = GetData[]
 
-  type FindResponde = GetData
+  type FindResponse = GetData
 
   type PostResponse = {
     messade: string
