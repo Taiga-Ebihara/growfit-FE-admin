@@ -14,11 +14,10 @@
       class="mt-10"
       :pagination="pagination"
       @click:first="pagination.page = $event"
-      @click:last="pagenation.page = $event"
+      @click:last="pagination.page = $event"
       @click:next="pagination.page = $event"
       @click:prev="pagination.page = $event"
     ></CommonPagination>
-    <CommonTinyMceEditor></CommonTinyMceEditor>
   </div>
 </template>
 
