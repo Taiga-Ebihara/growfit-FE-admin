@@ -15,8 +15,21 @@
         <span class="block ml-4">ニュース</span>
       </NuxtLink>
     </div>
-    <main class="absolute left-400px">
+    <main class="absolute left-400px main">
       <Nuxt />
     </main>
   </div>
 </template>
+
+<script lang="ts">
+import { Vue, Component } from 'nuxt-property-decorator'
+
+@Component({})
+export default class extends Vue {}
+</script>
+
+<style scoped>
+.main {
+  width: calc(100vw - 400px);
+}
+</style>

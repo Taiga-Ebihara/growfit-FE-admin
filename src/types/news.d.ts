@@ -9,5 +9,31 @@ export declare module News {
     updated_at: string
   }
 
+  type PostRequest = {
+    public: boolean
+    title: string
+    rendered_contents: string
+  }
+
+  type PatchRequest = {
+    public?: boolean
+    title?: string
+    rendered_contents?: string
+  }
+
   type GetResponse = GetData[]
+
+  type FindResponde = GetData
+
+  type PostResponse = {
+    messade: string
+  }
+
+  type PatchResponse = {
+    messade: string
+  }
+
+  type DeleteResponse = {
+    messade: string
+  }
 }

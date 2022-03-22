@@ -68,12 +68,16 @@ export default class extends Vue {
 
   @Emit('click:next')
   onClickNext(): number {
-    return this.pagination.page < this.pagination.lastPage ? this.pagination.page + 1 : this.pagination.page
+    return this.pagination.page < this.pagination.lastPage
+      ? this.pagination.page + 1
+      : this.pagination.page
   }
 
   @Emit('click:prev')
   onClickPrev(): number {
-    return this.pagination.page > 1 ? this.pagination.page - 1 : this.pagination.page
+    return this.pagination.page > 1
+      ? this.pagination.page - 1
+      : this.pagination.page
   }
 }
 </script>

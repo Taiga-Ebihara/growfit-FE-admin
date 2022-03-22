@@ -2,9 +2,14 @@
   <div>
     <CommonHeader title="ニュース一覧"></CommonHeader>
     <div class="flex justify-end items-center">
-      <BaseButton class="mr-8" color="primary" prepend-icon="add">新規登録</BaseButton>
+      <BaseButton class="mr-8" color="primary" prepend-icon="add"
+        >新規登録</BaseButton
+      >
     </div>
-    <UniquesNewsDataTable class="mt-4" :data="displayData"></UniquesNewsDataTable>
+    <UniquesNewsDataTable
+      class="mt-4"
+      :data="displayData"
+    ></UniquesNewsDataTable>
     <CommonPagination
       class="mt-10"
       :pagination="pagination"
@@ -13,6 +18,7 @@
       @click:next="pagination.page = $event"
       @click:prev="pagination.page = $event"
     ></CommonPagination>
+    <CommonTinyMceEditor></CommonTinyMceEditor>
   </div>
 </template>
 

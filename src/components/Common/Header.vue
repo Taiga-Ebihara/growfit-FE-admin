@@ -1,7 +1,9 @@
 <template>
   <div class="flex justify-between items-center pl-6 pr-4 h-104px">
     <span class="text-xl">{{ title }}</span>
-    <BaseButton append-icon="logout" @click="onClickLogout">ログアウト</BaseButton>
+    <BaseButton append-icon="logout" @click="onClickLogout"
+      >ログアウト</BaseButton
+    >
   </div>
 </template>
 
