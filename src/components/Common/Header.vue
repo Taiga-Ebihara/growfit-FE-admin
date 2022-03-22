@@ -16,6 +16,9 @@ export default class extends Vue {
   title!: string
 
   @Emit('click:logout')
-  onClickLogout() {}
+  onClickLogout() {
+    localStorage.removeItem('access_token')
+    this.$router.push('/login')
+  }
 }
 </script>
