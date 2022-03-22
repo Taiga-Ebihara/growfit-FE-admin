@@ -2,6 +2,7 @@
   <input
     class="flex h-12 w-full px-2 border border-gray-300 rounded-lg outline-none"
     type="text"
+    :placeholder="placeholder"
     :value="value"
     @input="onInput"
   />
@@ -14,6 +15,9 @@ import { Vue, Component, Emit, Prop } from 'nuxt-property-decorator'
 export default class extends Vue {
   @Prop({ type: String, required: false, default: '' })
   value!: string
+
+  @Prop({ type: String, required: false, default: '' })
+  placeholder!: string
 
   @Emit('input')
   onInput(event: InputEvent) {

@@ -5,12 +5,14 @@ module.exports = {
     extend: {
       colors: {
         base: '#4B636E',
+        background: '#546E7A',
         primary: '#4BACB8',
         error: '#FF5252',
         'accent-1': '#FFC400',
         'accent-2': '#00B0FF',
       },
       inset: {
+        '32px': '32px',
         '400px': '400px',
       },
       spacing: {
